@@ -35,8 +35,9 @@ app.use(limiter)
 app.use('/api/v1', router);
 
 //Database connection
-const uri = 'mongodb://127.0.0.1:27017/TaskManager';
-const options = { user: '', pass: '' }
+//const uri = 'mongodb://127.0.0.1:27017/TaskManager';
+const uri = 'mongodb+srv://AbdurRahim:<password>@cluster0.ospelv8.mongodb.net/TaskManager';
+const options = { user: 'AbdurRahim', pass: 'up3UWfVQsKvmUpC7' }
 mongoose.connect(uri, options)
     .then(() => {
         console.log("Data connection successful")
